@@ -1,0 +1,39 @@
+/* 
+ * style.css — Design system for the LeetCode Pattern Dashboard
+ * Phase 1: Minimal reset. Full design system built in Phase 3.
+ */
+
+/* Basic reset & dark mode placeholder */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    background: #0f0f14;
+    color: #e0e0e8;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#app {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+p {
+    color: #8888a0;
+    margin-bottom: 0.5rem;
+}

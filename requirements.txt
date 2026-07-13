@@ -1,0 +1,8 @@
+# Core web framework — handles routing, requests, responses
+flask==3.1.1
+
+# Loads environment variables from .env file (for API keys)
+python-dotenv==1.1.0
+
+# Makes HTTP requests to external APIs (Groq in Phase 4)
+requests==2.32.3
