@@ -22,7 +22,7 @@ A full-stack web application that tracks your LeetCode problem-solving journey, 
 ## 🎯 What This App Does
 
 1. **Log problems you struggled with** — paste your code, write notes on what confused you
-2. **AI-powered analysis** — an LLM identifies the core algorithmic pattern (Sliding Window, DP, etc.) and diagnoses your logical flaw
+2. **AI-powered code review** — an LLM identifies the algorithmic pattern, diagnoses your logical flaw, analyzes time/space complexity, suggests improvements, and adds inline comments to your code
 3. **Smart review scheduling** — a confidence-based spaced repetition system tells you *when* to revisit each problem
 4. **Dashboard insights** — see your weak patterns, upcoming reviews, and progress at a glance
 
@@ -112,8 +112,13 @@ The SQLite database (`leetcode.db`) is auto-created on first run.
 | `confidence_level` | INTEGER | 1-4 (drives review scheduling) |
 | `code_snippet` | TEXT | Your failed/struggling code |
 | `notes` | TEXT | Personal notes |
-| `pattern` | TEXT | AI-identified algorithmic pattern |
-| `diagnosis` | TEXT | AI diagnosis of logical flaw |
+| `pattern` | TEXT | AI: core algorithmic pattern |
+| `diagnosis` | TEXT | AI: logical flaw diagnosis |
+| `hint` | TEXT | AI: nudge toward correct approach |
+| `time_complexity` | TEXT | AI: Big-O time analysis |
+| `space_complexity` | TEXT | AI: Big-O space analysis |
+| `improvements` | TEXT | AI: JSON array of optimization suggestions |
+| `commented_code` | TEXT | AI: your code with inline comments |
 | `times_reviewed` | INTEGER | Review count |
 | `next_review` | TEXT | Next review date (ISO format) |
 
