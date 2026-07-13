@@ -138,12 +138,6 @@ Default: `daily_review_limit = 5`
 
 ---
 
-## 📝 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
----
-
 ## 👤 Author
 
 **Arhaan** — [GitHub](https://github.com/Arhaan-DB47)
